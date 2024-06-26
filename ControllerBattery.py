@@ -24,8 +24,8 @@ while 1:
             print (BatteryInfo)
             BatteryLevel=BatteryInfo[1]
         if BatteryLevel=="LOW" :
-            playsound(r"C:\Users\Panos\Desktop\low_battery.mp3")
-            toast.show_toast("Low Battery","Controller Battery is almost empty.",duration = 8,icon_path = r"C:\Users\Panos\Desktop\charge.ico",threaded = True)
+            playsound(r"PathToSound")
+            toast.show_toast("Low Battery","Controller Battery is almost empty.",duration = 8,icon_path = r"PathToIcon",threaded = True)
             time.sleep(180)
             continue
     time.sleep(60)
